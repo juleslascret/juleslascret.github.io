@@ -1,24 +1,7 @@
 * {
     box-sizing: border-box;
+    font-family: 'Nunito';
     margin: 0;
-}
-
-.libre-baskerville-regular {
-    font-family: "Libre Baskerville", serif;
-    font-style: normal;
-    font-weight: 400;
-}
-
-.libre-baskerville-bold {
-    font-family: "Libre Baskerville", serif;
-    font-style: normal;
-    font-weight: 700;
-}
-
-.libre-baskerville-regular-italic {
-    font-family: "Libre Baskerville", serif;
-    font-style: italic;
-    font-weight: 400;
 }
 
 ::-webkit-scrollbar {
@@ -142,26 +125,132 @@ article {
 
 .picFrame {
     align-items: center;
-    background-color: #f6f4ee;
     border-radius: 30px;
-    box-shadow: 0px 0px 20px rgba(25, 81, 117, 0.2);
     display: flex;
     height: 80%;
     justify-content: center;
     width: 25%;
 }
 
-.aboutFrame {
-    align-items: center;
-    display: flex;
-    height: 80%;
-    justify-content: center;
-    width: 45%;
+.ppPic {
+    border-radius: 15%;
 }
 
-#aboutText {
+.aboutFrame {
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(25, 81, 117, 0.2);
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+    padding: 0.5% 4%;
+    width: 55%;
+}
+
+.aboutText {
     color: #334455;
-    font-size: xx-large;
-    font-weight: 700;
+    font-size: larger;
+    font-weight: 750;
     text-align: center;
+}
+
+#courseContent {
+    justify-content: space-evenly;
+}
+
+.courseFrame {
+    align-items: center;
+    background: #334455;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-around;
+    padding: 0.5% 0;
+    width: 40%;
+}
+
+#cvContent {
+    justify-content: space-evenly;
+}
+
+.cvTextFrame {
+    align-items: center;
+    background: #ded9c7;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(170, 168, 162, 0.75);
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-around;
+    padding: 0.5% 0;
+    width: 35%;
+}
+
+.cvFrame {
+    align-items: center;
+    background: #ded9c7;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(170, 168, 162, 0.75);
+    color: #334455;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-evenly;
+    padding: 0.5% 0;
+    text-align: center;
+    width: 40%;
+}
+
+.downloadLink {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2% 3%;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 750;
+}
+
+.cvPic {
+    color: #334455;
+}
+
+.contactFrame {
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(25, 81, 117, 0.2);
+    color: #334455;
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    justify-content: space-evenly;
+    padding: 2.5% 0;
+    width: 40%;
+}
+
+.contactLines {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+
+}
+
+.contactLine {
+    align-items: center;
+    display: flex;
+    font-size: larger;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+#phoneLine {
+    width: 45%;
 }
