@@ -67,6 +67,7 @@ nav {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .navText {
@@ -86,8 +87,17 @@ a {
 article {
     align-items: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     height: 95vh;
+}
+
+.header {
+    color: #334455;
+}
+
+.header2 {
+    color: #4c5d78;
 }
 
 .sectionArticle2 {
@@ -102,10 +112,20 @@ article {
     background-color: #f8f6f0;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(200, 198, 192, 0.75);
+    color: #334455;
     display: flex;
+    flex-direction: column;
     height: 90%;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 90%;
+}
+
+.contentContainer {
+    align-items: center;
+    display: flex;
+    height: 80%;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .contentDiv2 {
@@ -113,9 +133,11 @@ article {
     background-color: #e5decc;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(170, 168, 162, 0.75);
+    color: #4c5d78;
     display: flex;
+    flex-direction: column;
     height: 90%;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 90%;
 }
 
@@ -126,6 +148,7 @@ article {
 .picFrame {
     align-items: center;
     border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(25, 81, 117, 0.2);
     display: flex;
     height: 80%;
     justify-content: center;
@@ -149,7 +172,6 @@ article {
 }
 
 .aboutText {
-    color: #334455;
     font-size: larger;
     font-weight: 750;
     text-align: center;
@@ -161,14 +183,115 @@ article {
 
 .courseFrame {
     align-items: center;
-    background: #334455;
+    background: #ded9c7;
     border-radius: 20px;
+    box-shadow: 0 0 15px rgba(170, 168, 162, 0.75);
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-evenly;
+    padding: 0.5% 0;
+    text-align: center;
+    width: 45%;
+}
+
+.courseFrame h3 {
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+.diplomaText {
+    font-size: x-large;
+    font-weight: 550;
+    text-align: center;
+}
+
+.date {
+    font-size: large;
+    font-weight: 450;
+}
+
+#projectContent {
+    justify-content: space-evenly;
+}
+
+.projectFrame {
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(170, 168, 162, 0.75);
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-evenly;
+    padding: 0.5% 0;
+    text-align: center;
+    width: 30%;
+}
+
+.projectFrame h3 {
+    font-weight: 550;
+    font-size: x-large;
+}
+
+.projectFrame h3:hover {
+    text-decoration: underline;
+}
+
+#interestContent {
+    justify-content: space-evenly;
+}
+
+.interestFrame {
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(170, 168, 162, 0.75);
     display: flex;
     flex-direction: column;
     height: 80%;
     justify-content: space-around;
     padding: 0.5% 0;
-    width: 40%;
+    width: 50%;
+}
+
+.interestFrame h2:hover, .interestFrame p:hover {
+    text-decoration: underline;
+}
+
+#skillsContent {
+    justify-content: space-evenly;
+}
+
+#skillsContainer {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.skillsFrame {
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(170, 168, 162, 0.75);
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    justify-content: space-around;
+    padding: 0.5% 0;
+    text-align: center;
+    width: 30%;
+}
+
+.skillsFrame h3 {
+    font-size: larger;
+}
+
+.skillsFrame h3:hover {
+    text-decoration: underline;
+}
+
+h4 {
+    color: #4c5d78;
 }
 
 #cvContent {
@@ -193,7 +316,6 @@ article {
     background: #ded9c7;
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(170, 168, 162, 0.75);
-    color: #334455;
     display: flex;
     flex-direction: column;
     height: 80%;
@@ -217,15 +339,10 @@ button {
     font-weight: 750;
 }
 
-.cvPic {
-    color: #334455;
-}
-
 .contactFrame {
     align-items: center;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(25, 81, 117, 0.2);
-    color: #334455;
     display: flex;
     flex-direction: column;
     height: 85%;
