@@ -196,12 +196,24 @@ article {
 }
 
 .courseFrame h3 {
-    font-size: xx-large;
+    font-size:  x-large;
     text-decoration: underline;
+}
+
+.coursePic {
+    width: 40%;
+    height: 50%;
+    border-radius: 7px;
 }
 
 .diplomaText {
     font-size: x-large;
+    font-weight: 550;
+    text-align: center;
+}
+
+.dimplomaText2 {
+    font-size: larger;
     font-weight: 550;
     text-align: center;
 }
@@ -239,6 +251,12 @@ article {
 
 #interestContent {
     justify-content: space-evenly;
+}
+
+.interestPic {
+    width: 60%;
+    height: 70%;
+    border-radius: 7px;
 }
 
 .interestFrame {
