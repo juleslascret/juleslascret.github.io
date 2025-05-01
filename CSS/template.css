@@ -98,16 +98,27 @@ code {
     padding: 2%;
 }
 
+.mainContent2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 210vh;
+    width: 100%;
+    color: #334455;
+    justify-content: space-between;
+    padding: 2%;
+}
+
 #mainContentInterest {
     height: 110vh;
 }
 
 #mainContentProject {
-    height: 350vh;
+    height: 290vh;
 }
 
 #mainContentProject2 {
-    height: 290vh;
+    height: 90vh;
 }
 
 #mainContentProject3 {
@@ -149,7 +160,7 @@ code {
     box-shadow: 0 0 15px rgba(200, 198, 192, 0.75);
     display: flex;
     align-items: center;
-    height: 330vh;
+    height: 270vh;
     flex-direction: column;
     width: 85%;
     text-align: center;
@@ -162,7 +173,7 @@ code {
     box-shadow: 0 0 15px rgba(200, 198, 192, 0.75);
     display: flex;
     align-items: center;
-    height: 270vh;
+    height: 70vh;
     flex-direction: column;
     width: 85%;
     text-align: center;

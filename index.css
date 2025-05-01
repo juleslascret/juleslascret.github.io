@@ -171,9 +171,12 @@ article {
     width: 55%;
 }
 
+.contentTitle {
+    text-decoration: underline;
+}
+
 .aboutText {
     font-size: larger;
-    font-weight: 750;
     text-align: center;
 }
 
@@ -302,6 +305,7 @@ article {
 
 .skillsFrame h3 {
     font-size: larger;
+    font-weight: 650;
 }
 
 .skillsFrame h3:hover {
@@ -310,6 +314,7 @@ article {
 
 h4 {
     color: #4c5d78;
+    font-weight: 550;
 }
 
 #cvContent {
