@@ -1,197 +1,153 @@
 <!DOCTYPE html>
-
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Jules Lascret</title>
-        <link rel="stylesheet" href="index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div class="headerTitleBox">
-                <h1 class="headerTitle">Jules Lascret</h1>
-            </div>
-            <nav>
-                <a href="#aboutContent"><h3 class="navText">À propos de moi</h3></a>
-                <a href="#courseContent"><h3 class="navText2">Cursus</h3></a>
-                <a href="#skillsContent"><h3 class="navText">Compétences / Qualités</h3></a>
-                <a href="#projectContent"><h3 class="navText2">Projets Universitaires</h3></a>
-                <a href="#interestContent"><h3 class="navText">Projet Individuel</h3></a>
-                <a href="#cvContent"><h3 class="navText2">C.V</h3></a>
-                <a href="#contactContent"><h3 class="navText">Contact</h3></a>
-            </nav>
-        </header>
-        <section>
-            <article class="sectionArticle">
-                <div class="contentDiv" id="aboutContent">
-                    <div class="header">
-                        <h2 class="contentTitle">À propos de moi</h2>
-                    </div>
-                    <div class="contentContainer">
-                        <section class="picFrame">
-                            <img class="ppPic" src="assets/pp.jpg" alt="pp.png" width="227" height="286">
-                        </section>
-                        <section class="aboutFrame">
-                            <p class="aboutText">Je m'appelle <strong>Jules Lascret</strong>, j'ai 19 ans et
-                                            je suis étudiant en <strong>deuxième année de BUT informatique</strong> à l'IUT Clermont Auvergne.</p>
-                            <p class="aboutText">Je suis quelqu'un de <strong>rigoureux</strong>, de <strong>curieux</strong> et de <strong>patient</strong>.</p>
-                            <p class="aboutText">Je suis actuellement à la recherche d'une <strong>alternance</strong> pour ma <strong>3ème année</strong> de BUT
-                                à partir de septembre 2025.</p>
-                        </section>
-                    </div>
-                </div>
-            </article>
 
-            <article class="sectionArticle2">
-                <div class="contentDiv2" id="courseContent">
-                    <div class="header2">
-                        <h2 class="contentTitle">Cursus</h2>
-                    </div>
-                    <div class="contentContainer">
-                        <section class="courseFrame">
-                            <h3>IUT Informatique Clermont Auvergne</h3>
-                            <p class="date">septembre 2023 - présent</p>
-                            <img src="assets/iut.jpg" class="coursePic" alt="IUT Clermont Auvergne">
-                            <p class="diplomaText">Validation des 2 premières années.</p>
-                        </section>
-                        <section class="courseFrame">
-                            <h3>Lycée Blaise Pascal - Clermont-Ferrand</h3>
-                            <p class="date">septembre 2020 - juin 2023</p>
-                            <img src="assets/bp.jpg" class="coursePic" alt="Blaise Pascal High School">
-                            <p class="diplomaText2">
-                                Obtention du Baccalauréat Section Européenne, Spécialités Mathématiques, NSI et AMC, avec Mention Bien.
-                            </p>
-                        </section>
-                    </div>
-                </div>
-            </article>
-            
-            <article class="sectionArticle">
-                <div class="contentDiv" id="skillsContent">
-                    <div class="header">
-                        <h2 class="contentTitle">Compétences / Qualités / Langues</h2>
-                    </div>
-                    <div class="contentContainer" id="skillsContainer">
-                        <section class="skillsFrame">
-                            <h4>Compétence</h4>
-                            <a href="HTML/skills.html"><h3>Développement d'applications<br>(PHP/Android/React Native)</h3></a>
-                        </section>
-                        <section class="skillsFrame">
-                            <h4>Compétence</h4>
-                            <a href="HTML/skills.html"><h3>Vulgarisation Technique</h3></a>
-                        </section>
-                        <section class="skillsFrame">
-                            <h4>Compétence</h4>
-                            <a href="HTML/skills.html"><h3>Développement de Web API <br> (.NET/Entity Framwork)</h3></a>
-                        </section> 
-                        <section class="skillsFrame">
-                            <h4>Qualité</h4>
-                            <a href="HTML/qualities.html"><h3>Rigueur</h3></a>
-                        </section>
-                        <section class="skillsFrame">
-                            <h4>Qualité</h4>
-                            <a href="HTML/qualities.html"><h3>Patience</h3></a>
-                        </section>
-                        <section class="skillsFrame">
-                            <h4>Qualité</h4>
-                            <a href="HTML/qualities.html"><h3>Curiosité</h3></a>
-                        </section>
-                        <section class="skillsFrame">
-                            <h4>Langue</h4>
-                            <h3>Anglais - C1/C2</h3>
-                        </section>
-                        <section class="skillsFrame">
-                            <h4>Langue</h4>
-                            <h3>Italien - B2</h3>
-                        </section>
-                    </div>    
-                </div>
-            </article>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jules Lascret</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <script>
+        function showTab(tabId) {
+          document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+          document.getElementById(tabId).classList.remove('hidden');
+        }
+      </script>      
+</head>
 
-            <article class="sectionArticle2">
-                <div class="contentDiv2" id="projectContent">
-                    <div class="header2">
-                        <h2 class="contentTitle">Projets Universitaires / Situations d'Apprentissage et d'Évaluation</h2>
-                    </div>
-                    <div class="contentContainer">
-                        <section class="projectFrame">
-                            <a href="HTML/sae2a.html">
-                                <h2>Projet 2ème année</h2>
-                                <h3>Développement d'une Application</h3>
-                            </a>
-                        </section>
-                        <section class="projectFrame">
-                            <a href="HTML/sae201.html">
-                                <h2>SAÉ 2.01</h2>
-                                <h3>Développement d'une Application</h3>
-                            </a>
-                        </section>
-                        <section class="projectFrame">
-                            <a href="HTML/sae204.html">
-                                <h2>SAÉ 2.04</h2>
-                                <h3>Exploitation d'une Base<br>de Données</h3>
-                            </a>
-                        </section>
-                    </div>
-                </div>
-            </article>
+<body>
+    
+  <!-- Navbar -->
+  <header class="bg-palette-blue text-white p-4">
+    <nav class="container mx-auto flex justify-between items-center">
+      <h1 class="text-4xl font-bold">Jules LASCRET</h1>
+      <ul class="hidden md:flex gap-4">
+        <li><a href="#about" class="hover:text-palette-yellow">À propos</a></li>
+        <li><a href="#cursus" class="hover:text-palette-yellow">Cursus</a></li>
+        <li><a href="#skills" class="hover:text-palette-yellow">Compétences</a></li>
+        <li><a href="#projects" class="hover:text-palette-yellow">Projets</a></li>
+        <li><a href="#cv" class="hover:text-palette-yellow">CV</a></li>
+        <li><a href="#contact" class="hover:text-palette-yellow">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <article class="sectionArticle">
-                <div class="contentDiv" id="interestContent">
-                    <div class="header">
-                        <h2 class="contentTitle">Projet Individuel</h2>
-                    </div>
-                    <div class="contentContainer">
-                        <section class="interestFrame">
-                            <a href="HTML/aws.html"><h2>Station Météo avec Arduino</h2></a>
-                            <img class="interestPic" src="assets/aws1.jpg" alt="Arduino Weather Station">
-                            <a href="https://github.com/juleslascret/ArduinoWeatherStation"><p>Lien vers le repo Github</p></a>
-                        </section>
-                    </div>
-                </div>
-            </article>
+  <!-- À propos -->
+  <section id="about" class="bg-white min-h-screen flex items-center">
+    <div class="container mx-auto text-center px-4">
+      <h2 class="text-3xl font-semibold text-palette-blue mb-4">À propos de moi</h2>
+      <p class="max-w-2xl mx-auto">Étudiant en 2ᵉ année de BUT Informatique à Aubière, passionné par le développement web, les algorithmes, et les projets collaboratifs.</p>
+    </div>
+  </section>
 
-            <article class="sectionArticle2">
-                <div class="contentDiv2" id="cvContent">
-                    <div class="header2">
-                        <h2 class="contentTitle">C.V</h2>
-                    </div>
-                    <div class="contentContainer">
-                        <section class="cvFrame">
-                            <h2>Télécharger
-                                <br>
-                                -
-                                <br>
-                                CV_Jules_Lascret.pdf
-                            </h2>
-                            <a class="downloadLink" href="assets/CV_Jules_Lascret.pdf" download="CV_Jules_Lascret.pdf">
-                                <button>
-                                    <img class="cvPic" src="assets/downloadIcon.png" alt="downloadIcon">
-                                </button>
-                            </a>
-                        </section>
-                    </div>
-                </div>
-            </article>
+  <!-- Cursus -->
+  <section id="cursus" class="bg-[#fef6ec] min-h-screen flex items-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-palette-blue text-center mb-6">Cursus</h2>
+      <ul class="space-y-4 max-w-2xl mx-auto">
+        <li class="border-l-4 border-palette-yellow pl-4">
+          <h3 class="font-semibold">BUT Informatique – IUT Clermont-Auvergne</h3>
+          <p class="text-sm">2023 - Aujourd’hui</p>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-            <article class="sectionArticle">
-                <div class="contentDiv" id="contactContent">
-                    <div class="contentContainer">
-                        <section class="contactFrame">
-                            <h2 class="contentTitle">Contact</h2>
-                            <div class="contactLines">
-                                <p class="contactLine">
-                                    <img src="assets/emailIcon.png" alt="emailIcon" width="75" height="75">
-                                    Jules.Lascret@etu.uca.fr
-                                </p>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </article>
-        </section>
-    </body>
+  <!-- Compétences -->
+  <section id="skills" class="bg-[#fbeedc] min-h-screen flex items-center">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold text-palette-blue mb-6">Compétences</h2>
+
+      <!-- Onglets -->
+      <div class="flex justify-center gap-4 mb-6 flex-wrap">
+        <button onclick="showTab('tech')" class="tab-button bg-palette-orange text-white py-2 px-4 rounded">Techniques</button>
+        <button onclick="showTab('qual')" class="tab-button bg-palette-red text-white py-2 px-4 rounded">Qualités</button>
+        <button onclick="showTab('lang')" class="tab-button bg-palette-yellow text-white py-2 px-4 rounded">Langues</button>
+      </div>
+
+      <!-- Contenus -->
+      <div id="tech" class="tab-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-white p-4 border rounded shadow-sm">HTML / CSS / JS</div>
+        <div class="bg-white p-4 border rounded shadow-sm">Python / Java</div>
+        <div class="bg-white p-4 border rounded shadow-sm">SQL / Git</div>
+      </div>
+      <div id="qual" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-white p-4 border rounded shadow-sm">Travail en équipe</div>
+        <div class="bg-white p-4 border rounded shadow-sm">Rigueur</div>
+        <div class="bg-white p-4 border rounded shadow-sm">Curiosité</div>
+      </div>
+      <div id="lang" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-white p-4 border rounded shadow-sm">Français : natif</div>
+        <div class="bg-white p-4 border rounded shadow-sm">Anglais : B2</div>
+        <div class="bg-white p-4 border rounded shadow-sm">Espagnol : A2</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+<section id="projects" class="bg-white min-h-screen flex items-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-palette-blue text-center mb-6">Projets</h2>
+  
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold text-palette-orange mb-2">Projets Universitaires</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Application Java pour la gestion de bibliothèque (avec interface Swing)</li>
+          <li>Base de données relationnelle pour une entreprise fictive (PostgreSQL)</li>
+          <li>Développement d'un mini-site vitrine HTML/CSS</li>
+        </ul>
+      </div>
+  
+      <div>
+        <h3 class="text-xl font-semibold text-palette-red mb-2">Projets Extra-Universitaires</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Bot Discord en Python (commandes personnalisées, gestion de rôles)</li>
+          <li>Développement d’un site personnel statique avec GitHub Pages</li>
+          <li>Participation à des challenges de code sur des plateformes comme Codingame</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CV -->
+  <section id="cv" class="bg-[#fef6ec] min-h-screen flex items-center">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold text-palette-blue mb-6">Mon CV</h2>
+      <p class="mb-4">Tu peux télécharger mon CV en cliquant sur le bouton ci-dessous :</p>
+      <a href="CV_nom.pdf" class="inline-block bg-palette-blue text-white py-3 px-6 rounded hover:bg-palette-yellow transition-all">
+        Télécharger mon CV
+      </a>
+    </div>
+  </section>
+  
+  <!-- Contact -->
+  <section id="contact" class="bg-[#fbeedc] min-h-screen flex items-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-palette-blue text-center mb-6">Contact</h2>
+      <form class="max-w-xl mx-auto space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium">Nom</label>
+          <input type="text" id="name" name="name" required class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium">Email</label>
+          <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium">Message</label>
+          <textarea id="message" name="message" rows="4" required class="w-full p-2 border border-gray-300 rounded"></textarea>
+        </div>
+        <button type="submit" class="bg-palette-red text-white px-6 py-2 rounded hover:bg-palette-orange">
+          Envoyer
+        </button>
+      </form>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-palette-blue text-white text-center py-4 text-sm">
+    © 2025 – Ton Nom. Tous droits réservés.
+  </footer>
+
+</body>
+
 </html>
